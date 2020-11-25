@@ -13,12 +13,19 @@ import tailwind from './Images/css/tailwind.svg'
 import sass from './Images/css/sass.svg'
 
 import firebase from './Images/Auth/firebase.svg'
+import auth0 from './Images/Auth/auth0.svg'
 
 import vercel from './Images/Hosting/vercel.svg'
 import aws from './Images/Hosting/aws.svg'
 import azure from './Images/Hosting/azure.svg'
 import heroku from './Images/Hosting/heroku.svg'
 import googleCloud from './Images/Hosting/google-cloud.svg'
+
+import googleAnalytics from './Images/Analytics/google-analytics.svg'
+import plausible from './Images/Analytics/plausible.jpg'
+
+import free from './Images/Free/check.svg'
+import notFree from './Images/Free/low.svg'
 
 
 export const config = {
@@ -36,21 +43,25 @@ export const config = {
         analytics: {
             meta: {
                 product: 'Analytics',
-                columns: ['Product', 'Type', "Free Tier", 'Free Limit'],
+                columns: ['Product', 'Pricing Page', "Free Tier", 'Free Limit'],
                 path: 'analytics'
             },
             content: [
                 {
                     name: 'Google Analytics',
-                    img: firebase,
+                    img: googleAnalytics,
                     link: 'https://analytics.google.com/',
-                    type: 'type'
+                    type: 'type',
+                    free: free,
+                    freeLimit: '100 Sites',
                 },
                 {
                     name: 'Plausible',
-                    img: firebase,
-                    link: '#',
-                    type: 'type'
+                    img: plausible,
+                    link: 'https://plausible.io/',
+                    type: 'type',
+                    free: notFree,
+                    freeLimit: 'N/A',
                 },
             ]
         },
@@ -65,16 +76,16 @@ export const config = {
                     name: 'Firebase Auth',
                     img: firebase,
                     link: 'https://firebase.google.com/',
-                    type: 'type',
-                    free: true,
+                    type: 'Email/Password',
+                    free: free,
                     freeLimit: 'No Limit',
                 },
                 {
                     name: 'Auth 0',
-                    img: firebase,
+                    img: auth0,
                     link: 'https://auth0.com/',
-                    type: 'type',
-                    free: true,
+                    type: 'Email/Password',
+                    free: free,
                     freeLimit: '7000',
                 },
             ]
@@ -178,7 +189,7 @@ export const config = {
                     img: vercel,
                     link: 'https://vercel.com/dashboard',
                     type: 'Jamstack',
-                    free: true,
+                    free: free,
                     freeLimit: '100 GB',
                 },
                 {
@@ -186,7 +197,7 @@ export const config = {
                     img: heroku,
                     link: 'https://heroku.com',
                     type: 'Full Server',
-                    free: true,
+                    free: free,
                     freeLimit: 'Low performance',
                 },
                 {
@@ -194,7 +205,7 @@ export const config = {
                     img: aws,
                     link: 'https://aws.amazon.com/',
                     type: 'Full Cloud',
-                    free: true,
+                    free: free,
                     freeLimit: 'Low performance',
                 },
                 {
@@ -202,15 +213,15 @@ export const config = {
                     img: googleCloud,
                     link: 'https://cloud.google.com/',
                     type: 'Full Cloud',
-                    free: true,
+                    free: free,
                     freeLimit: 'Low performance',
                 },
                 {
-                    name: 'Azure',
+                    name: 'Microsoft Azure',
                     img: azure,
                     link: 'https://azure.microsoft.com/',
                     type: 'Full Cloud',
-                    free: true,
+                    free: free,
                     freeLimit: 'Low performance',
                 },
             ]

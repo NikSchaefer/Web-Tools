@@ -8,7 +8,6 @@ function Options(props) {
     return out
 }
 export default function Home(props) {
-
     return (
         <div className='home'>
             <h1>Choose Your Stack</h1>

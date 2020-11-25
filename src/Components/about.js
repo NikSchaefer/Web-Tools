@@ -18,11 +18,11 @@ export default function About() {
                 <br /><br />
                 <a href="https://iconscout.com/icons/flask" >Flask Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
                 <br /><br />
-                <a href="https://iconscout.com/icons/react">React Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> 
+                <a href="https://iconscout.com/icons/react">React Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
                 <br /><br />
                 <a href="https://iconscout.com/icons/vue">Vue Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
                 <br /><br />
-                <a href="https://iconscout.com/icons/angular">Angular Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> 
+                <a href="https://iconscout.com/icons/angular">Angular Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
                 <br /><br />
                 <a href="https://iconscout.com/icons/bootstrap">Bootstrap Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" >Icon Mafia</a>
                 <br /><br />
@@ -39,8 +39,8 @@ export default function About() {
                 <a href="https://iconscout.com/icons/sass">Sass Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
                 <br /><br />
                 <a href="https://iconscout.com/icons/low">Low Icon</a> by <a href="https://iconscout.com/contributors/twitter-inc">Twitter Emoji</a>
-            
-            
+                <br /><br />
+                <a href="https://iconscout.com/icons/google-analytics">Google-analytics Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
             </p>
         </div>
     )

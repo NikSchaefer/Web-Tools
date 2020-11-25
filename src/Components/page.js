@@ -1,6 +1,4 @@
 import React from 'react'
-import free from '../Images/Free/check.svg'
-import notFree from '../Images/Free/low.svg'
 function Legend(props) {
     function LegendLinks(props) {
         let out = []
@@ -10,11 +8,10 @@ function Legend(props) {
         return out;
     }
     if (props.meta.columns.length > 2) {
-        return <div className='legend-div' style={{ maxWidth: '600px' }}>
+        return <div className='legend-div' style={{ maxWidth: '800px' }}>
             <LegendLinks array={props.meta.columns} />
         </div>
     }
-
     return (
         <div className='legend-div'>
             <LegendLinks array={props.meta.columns} />
@@ -22,44 +19,33 @@ function Legend(props) {
     )
 }
 function OptionRow(props) {
-    function Image(props) {
-        if (props.prop.free) {
-            return <img src={free} className='option-img' alt='' />
-        }
-        else {
-            return <img src={notFree} className='option-img' alt='' />
-        }
-    }
-    let out = []
     if ('free' in props.array[props.iter]) {
-        out.push(
-            <div className='option-div' style={{ maxWidth: '600px' }}>
+        return (
+            <div className='option-div' style={{ maxWidth: '800px' }}>
                 <a href={props.array[props.iter].link} className='option-href'
-                    style={{ width: '30%' }}
+                    style={{ width: '20%' }}
                     onClick={function (e) { e.preventDefault(); window.open(props.array[props.iter].link) }}>
                     <img src={props.array[props.iter].img} alt={props.array[props.iter].name} className='option-img' />
                     {props.array[props.iter].name}
                 </a>
                 <p className='option-type'>{props.array[props.iter].type}</p>
-                <Image prop={props.array[props.iter]} />
+                <img src={props.array[props.iter].free} className='option-free-img' alt='' />
                 <p className='option-type'>{props.array[props.iter].freeLimit}</p>    
             </div>
         )
     }
     else {
-        out.push(
+        return (
             <div className='option-div'>
                 <a href={props.array[props.iter].link} className='option-href'
-                    onClick={function (e) { e.preventDefault(); window.open(props.array[props.iter].link) }}>
+                    target="_blank" rel='noreferrer'>
                     <img src={props.array[props.iter].img} alt={props.array[props.iter].name} className='option-img' />
                     {props.array[props.iter].name}
                 </a>
-                <p className='option-type'>{props.array[props.iter].type}</p>
+                <p>{props.array[props.iter].type}</p>
             </div>
         )
     }
-
-    return out
 }
 function Options(props) {
     let out = []
