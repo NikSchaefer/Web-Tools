@@ -14,19 +14,31 @@ export default function About() {
             </p>
             <h1>Icon Sources</h1>
             <p>
-                <a href="https://iconscout.com/icons/django">Django Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
+                <a href="https://iconscout.com/icons/django">Django Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
                 <br /><br />
-                <a href="https://iconscout.com/icons/flask" >Flask Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
+                <a href="https://iconscout.com/icons/flask" >Flask Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
                 <br /><br />
-                <a href="https://iconscout.com/icons/react">React Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
+                <a href="https://iconscout.com/icons/react">React Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> 
                 <br /><br />
                 <a href="https://iconscout.com/icons/vue">Vue Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
                 <br /><br />
-                <a href="https://iconscout.com/icons/angular">Angular Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
+                <a href="https://iconscout.com/icons/angular">Angular Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> 
                 <br /><br />
                 <a href="https://iconscout.com/icons/bootstrap">Bootstrap Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" >Icon Mafia</a>
                 <br /><br />
                 <a href="https://iconscout.com/icons/firebase">Firebase Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
+                <br /><br />
+                <a href="https://iconscout.com/icons/aws" >Aws Icon</a> by <a href="https://iconscout.com/contributors/maninderkaur">Maninder Kaur</a>
+                <br /><br />
+                <a href="https://iconscout.com/icons/azure">Azure Icon</a> by <a href="https://iconscout.com/contributors/maninderkaur">Maninder Kaur</a>
+                <br /><br />
+                <a href="https://iconscout.com/icons/google-cloud">Google cloud Icon</a> by <a href="https://iconscout.com/contributors/maninderkaur">Maninder Kaur</a>
+                <br /><br />
+                <a href="https://iconscout.com/icons/heroku">Heroku Icon</a> by <a href="https://iconscout.com/contributors/jagathish">Jagathish Saravanan</a>
+                <br /><br />
+
+            
+            
             </p>
         </div>
     )

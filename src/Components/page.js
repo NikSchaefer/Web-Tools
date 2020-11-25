@@ -1,7 +1,6 @@
 import React from 'react'
 function LegendLinks(props) {
     let out = []
-    console.log(typeof props.array)
     for (let i = 0; i < props.array.length; i++) {
         out.push(<p>{props.array[i]}</p>)
     }
@@ -36,6 +35,7 @@ function Options(props) {
 export default function Page(props) {
     return (
         <div className='page-div'>
+            <h1>{props.config.meta.product}</h1>
             <Legend meta={props.config.meta} />
             <Options columns={props.config.meta.columns} array={props.config.content} />
         </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 function Options(props) {
-
     let out = []
     for (let i = 0; i < props.arr.length; i++) {
         out.push(<NavLink className='home-option' to={props.arr[i][1]}>{props.arr[i][0]}</NavLink>)

@@ -12,6 +12,11 @@ import bootstrap from './Images/css/bootstrap.svg'
 
 import firebase from './Images/Auth/firebase.svg'
 
+import aws from './Images/Hosting/aws.svg'
+import azure from './Images/Hosting/azure.svg'
+import heroku from './Images/Hosting/heroku.svg'
+import googleCloud from './Images/Hosting/google-cloud.svg'
+
 
 export const config = {
     homeInfo:
@@ -27,7 +32,7 @@ export const config = {
     tools: {
         analytics: {
             meta: {
-                product: 'Title',
+                product: 'Analytics',
                 columns: ['Product', 'Type'],
                 path: 'analytics'
             },
@@ -39,13 +44,7 @@ export const config = {
                     type: 'type'
                 },
                 {
-                    name: 'Next JS',
-                    img: firebase,
-                    link: '#',
-                    type: 'type'
-                },
-                {
-                    name: 'Next JS',
+                    name: 'Plausible',
                     img: firebase,
                     link: '#',
                     type: 'type'
@@ -54,34 +53,32 @@ export const config = {
         },
         auth: {
             meta: {
-                product: 'Title',
+                product: 'Authentication',
                 columns: ['Product', 'Type'],
                 path: 'auth'
             },
             content: [
                 {
-                    name: 'Express',
+                    name: 'Firebase Auth',
                     img: firebase,
-                    link: '#',
-                    type: 'type'
+                    link: 'https://firebase.google.com/',
+                    type: 'type',
+                    free: true,
+                    freeLimit:'No Limit',
                 },
                 {
-                    name: 'Next JS',
+                    name: 'Auth 0',
                     img: firebase,
-                    link: '#',
-                    type: 'type'
-                },
-                {
-                    name: 'Next JS',
-                    img: firebase,
-                    link: '#',
-                    type: 'type'
+                    link: 'https://auth0.com/',
+                    type: 'type',
+                    free: true,
+                    freeLimit:'7000',
                 },
             ]
         },
         backEnd: {
             meta: {
-                product: 'Title',
+                product: 'Backend Frameworkds',
                 columns: ['Product', 'Type'],
                 path: 'backend'
             },
@@ -114,7 +111,7 @@ export const config = {
         },
         frontEnd: {
             meta: {
-                product: 'Title',
+                product: 'Frontend Frameworks',
                 columns: ['Product', 'Size'],
                 path: 'frontend'
             },
@@ -122,26 +119,26 @@ export const config = {
                 {
                     name: 'React',
                     img: react,
-                    link: '#',
+                    link: 'https://reactjs.org/',
                     type: '42 kB'
                 },
                 {
                     name: 'Vue',
                     img: vue,
-                    link: '#',
+                    link: 'https://vuejs.org/',
                     type: '20 kB'
                 },
                 {
                     name: 'Angular',
                     img: angular,
-                    link: '#',
+                    link: 'https://angular.io/',
                     type: 'Depends'
                 },
             ]
         },
         css: {
             meta: {
-                product: 'Title',
+                product: 'CSS Frameworks',
                 columns: ['Framework', 'JS'],
                 path: 'css'
             },
@@ -156,34 +153,50 @@ export const config = {
         },
         hosting: {
             meta: {
-                product: 'Title',
-                columns: ['Product', 'Size'],
+                product: 'Hosting',
+                columns: ['Product', 'Type'],
                 path: 'hosting'
             },
             content: [
                 {
                     name: 'Vercel',
                     img: firebase,
-                    link: '#',
-                    type: '42 kB'
+                    link: 'https://vercel.com/dashboard',
+                    type: 'Jamstack',
+                    free: true,
+                    freeLimit: '100 GB',
+                },
+                {
+                    name: 'Heroku',
+                    img: heroku,
+                    link: 'https://heroku.com',
+                    type: 'Full Server',
+                    free: true,
+                    freeLimit: 'Low performance',
                 },
                 {
                     name: 'AWS',
-                    img: firebase,
-                    link: '#',
-                    type: '20 kB'
+                    img: aws,
+                    link: 'https://aws.amazon.com/',
+                    type: 'Full Cloud',
+                    free: true,
+                    freeLimit: 'Low performance',
                 },
                 {
                     name: 'Google Cloud',
-                    img: firebase,
-                    link: '#',
-                    type: 'Depends'
+                    img: googleCloud,
+                    link: 'https://cloud.google.com/',
+                    type: 'Full Cloud',
+                    free: true,
+                    freeLimit: 'Low performance',
                 },
                 {
                     name: 'Azure',
-                    img: firebase,
-                    link: '#',
-                    type: 'Depends'
+                    img: azure,
+                    link: 'https://azure.microsoft.com/',
+                    type: 'Full Cloud',
+                    free: true,
+                    freeLimit: 'Low performance',
                 },
             ]
         },
