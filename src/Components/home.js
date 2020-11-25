@@ -12,11 +12,11 @@ export default function Home(props) {
 
     return (
         <div className='home'>
-            <h1>Lorem Ipsum</h1>
+            <h1>Choose Your Stack</h1>
             <div className='home-option-div'>
                 <Options arr={props.config} />
             </div>
-            <p className='home-about'>About this Project</p>
+            <NavLink to='/about' className='home-about'>Contribute to the list</NavLink>
         </div>
     )
 }

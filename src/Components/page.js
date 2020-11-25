@@ -3,7 +3,7 @@ function LegendLinks(props) {
     let out = []
     console.log(typeof props.array)
     for (let i = 0; i < props.array.length; i++) {
-        out.push(<p className='legend-column'>{props.array[i]}</p>)
+        out.push(<p>{props.array[i]}</p>)
     }
     return out;
 }
@@ -22,8 +22,6 @@ function OptionRow(props) {
                 <img src={props.array[props.iter].img} alt={props.array[props.iter].name} className='option-img' />
                 {props.array[props.iter].name}
             </a>
-
-
             <p className='option-type'>{props.array[props.iter].type}</p>
         </div>
     )
@@ -36,7 +34,6 @@ function Options(props) {
     return out
 }
 export default function Page(props) {
-
     return (
         <div className='page-div'>
             <Legend meta={props.config.meta} />
