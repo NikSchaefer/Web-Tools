@@ -8,13 +8,11 @@ function Options(props) {
     return out
 }
 export default function Home(props) {
-    return (
-        <div className='home'>
-            <h1>Choose Your Stack</h1>
+    return [
+            <h1>Choose Your Stack</h1>,
             <div className='home-option-div'>
                 <Options arr={props.config} />
+                <NavLink to='/about' className='home-about'>Contribute to the list</NavLink>
             </div>
-            <NavLink to='/about' className='home-about'>Contribute to the list</NavLink>
-        </div>
-    )
+    ]
 }

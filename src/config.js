@@ -92,7 +92,7 @@ export const config = {
         },
         backEnd: {
             meta: {
-                product: 'Backend Frameworkds',
+                product: 'Backend Frameworks',
                 columns: ['Product', 'Type'],
                 path: 'backend'
             },

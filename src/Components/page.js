@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 function Legend(props) {
     function LegendLinks(props) {
         let out = []
@@ -60,6 +61,7 @@ export default function Page(props) {
             <h1>{props.config.meta.product}</h1>
             <Legend meta={props.config.meta} />
             <Options columns={props.config.meta.columns} array={props.config.content} />
+            Don't see certain tools? <NavLink to='/about'>Contribute to the list</NavLink>
         </div>
     )
 }
