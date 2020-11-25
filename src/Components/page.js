@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+const width = '600px'
 function Legend(props) {
     function LegendLinks(props) {
         let out = []
@@ -9,7 +10,7 @@ function Legend(props) {
         return out;
     }
     if (props.meta.columns.length > 2) {
-        return <div className='legend-div' style={{ maxWidth: '800px' }}>
+        return <div className='legend-div' style={{ maxWidth: width }}>
             <LegendLinks array={props.meta.columns} />
         </div>
     }
@@ -22,9 +23,9 @@ function Legend(props) {
 function OptionRow(props) {
     if ('free' in props.array[props.iter]) {
         return (
-            <div className='option-div' style={{ maxWidth: '800px' }}>
+            <div className='option-div' style={{ maxWidth: width }}>
                 <a href={props.array[props.iter].link} className='option-href'
-                    style={{ width: '20%' }}
+                    style={{ width: '25%' }}
                     onClick={function (e) { e.preventDefault(); window.open(props.array[props.iter].link) }}>
                     <img src={props.array[props.iter].img} alt={props.array[props.iter].name} className='option-img' />
                     {props.array[props.iter].name}

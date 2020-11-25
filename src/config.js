@@ -27,23 +27,28 @@ import plausible from './Images/Analytics/plausible.jpg'
 import free from './Images/Free/check.svg'
 import notFree from './Images/Free/low.svg'
 
+import fauna from './Images/Database/fauna.png'
+import mongo from './Images/Database/mongodb.svg'
+
 
 export const config = {
-    homeInfo:
+    homeInfo: // path on the home page
         [
             ['Analytics', 'analytics'],
             ['Authentication', 'auth'],
-            ['Back End', 'backend'],
             ['Front End', 'frontend'],
+            ['Back End', 'backend'],
+        
+            ['Database', 'database'],
             ['CSS Framework', 'css'],
-            ['Hosting', 'hosting']
+            ['Hosting', 'hosting'],
         ],
 
     tools: {
         analytics: {
             meta: {
                 product: 'Analytics',
-                columns: ['Product', 'Pricing Page', "Free Tier", 'Free Limit'],
+                columns: ['Product', '', "Free Tier", 'Free Limit'],
                 path: 'analytics'
             },
             content: [
@@ -51,7 +56,7 @@ export const config = {
                     name: 'Google Analytics',
                     img: googleAnalytics,
                     link: 'https://analytics.google.com/',
-                    type: 'type',
+                    type: '',
                     free: free,
                     freeLimit: '100 Sites',
                 },
@@ -59,7 +64,7 @@ export const config = {
                     name: 'Plausible',
                     img: plausible,
                     link: 'https://plausible.io/',
-                    type: 'type',
+                    type: '',
                     free: notFree,
                     freeLimit: 'N/A',
                 },
@@ -147,6 +152,71 @@ export const config = {
                     img: angular,
                     link: 'https://angular.io/',
                     type: 'Depends'
+                },
+            ]
+        },
+        database: {
+            meta: {
+                product: 'Database',
+                columns: ['Product', 'Type', "Free Tier", 'Free Limit'],
+                path: 'database'
+            },
+            content: [
+                {
+                    name: 'Cloud Firestore',
+                    img: firebase,
+                    link: 'https://firebase.google.com/',
+                    type: 'NoSQL',
+                    free: free,
+                    freeLimit: '1 GiB',
+                },
+                {
+                    name: 'MongoDB',
+                    img: mongo,
+                    link: 'https://auth0.com/',
+                    type: 'NoSQL',
+                    free: free,
+                    freeLimit: '512 MB',
+                },
+                {
+                    name: 'Fauna',
+                    img: fauna,
+                    link: 'https://auth0.com/',
+                    type: 'NoSQL',
+                    free: free,
+                    freeLimit: '100 MB',
+                },
+                {
+                    name: 'Heroku',
+                    img: heroku,
+                    link: 'https://heroku.com/',
+                    type: 'SQL',
+                    free: free,
+                    freeLimit: '10k Rows',
+                },
+                {
+                    name: 'AWS',
+                    img: aws,
+                    link: 'https://auth0.com/',
+                    type: 'Depends on Service',
+                    free: free,
+                    freeLimit: 'Depends on Service',
+                },
+                {
+                    name: 'Google Cloud SQL',
+                    img: googleCloud,
+                    link: 'https://auth0.com/',
+                    type: 'SQL',
+                    free: notFree,
+                    freeLimit: 'N/A',
+                },
+                {
+                    name: 'Microsoft Azure SQL',
+                    img: azure,
+                    link: 'https://auth0.com/',
+                    type: 'SQL',
+                    free: notFree,
+                    freeLimit: 'N/A',
                 },
             ]
         },
