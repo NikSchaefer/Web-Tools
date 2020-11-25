@@ -1,11 +1,44 @@
 import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom'
+import Home from './Components/home'
+import Page from './Components/page'
+import About from './Components/about'
 
-function App() {
+import Header from './Components/header'
+
+
+import { config } from './config'
+
+function APage(props) {
   return (
-    <div>
-      
-    </div>
-  );
+    <Route path={`/${props.tool.meta.path}`}>
+      <Page config={props.tool} />
+    </Route>
+  )
 }
 
-export default App;
+function Render(props) {
+  let out = []
+  const array = Object.keys(props.tools)
+  for (let i = 0; i < array.length; i++) {
+    out.push(
+      <APage tool={props.tools[array[i]]} />
+    )
+  }
+  return out
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Header />
+      <Route exact path='/'>
+        <Home config={config.homeInfo} />
+      </Route>
+      <Route path='/about' component={About} />
+
+      <Render tools={config.tools} />
+
+    </BrowserRouter>
+  );
+}
