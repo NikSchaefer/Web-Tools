@@ -9,9 +9,12 @@ import vue from './Images/frontend/vue.svg'
 import angular from './Images/frontend/angular.svg'
 
 import bootstrap from './Images/css/bootstrap.svg'
+import tailwind from './Images/css/tailwind.svg'
+import sass from './Images/css/sass.svg'
 
 import firebase from './Images/Auth/firebase.svg'
 
+import vercel from './Images/Hosting/vercel.svg'
 import aws from './Images/Hosting/aws.svg'
 import azure from './Images/Hosting/azure.svg'
 import heroku from './Images/Hosting/heroku.svg'
@@ -33,7 +36,7 @@ export const config = {
         analytics: {
             meta: {
                 product: 'Analytics',
-                columns: ['Product', 'Type'],
+                columns: ['Product', 'Type', "Free Tier", 'Free Limit'],
                 path: 'analytics'
             },
             content: [
@@ -54,7 +57,7 @@ export const config = {
         auth: {
             meta: {
                 product: 'Authentication',
-                columns: ['Product', 'Type'],
+                columns: ['Product', 'Type', "Free Tier", 'Free Limit'],
                 path: 'auth'
             },
             content: [
@@ -64,7 +67,7 @@ export const config = {
                     link: 'https://firebase.google.com/',
                     type: 'type',
                     free: true,
-                    freeLimit:'No Limit',
+                    freeLimit: 'No Limit',
                 },
                 {
                     name: 'Auth 0',
@@ -72,7 +75,7 @@ export const config = {
                     link: 'https://auth0.com/',
                     type: 'type',
                     free: true,
-                    freeLimit:'7000',
+                    freeLimit: '7000',
                 },
             ]
         },
@@ -149,18 +152,30 @@ export const config = {
                     link: 'https://getbootstrap.com/',
                     type: 'JS included'
                 },
+                {
+                    name: 'Tailwind CSS',
+                    img: tailwind,
+                    link: 'https://tailwindcss.com/',
+                    type: 'JS Included'
+                },
+                {
+                    name: 'Sass',
+                    img: sass,
+                    link: 'https://sass-lang.com/',
+                    type: 'JS Included'
+                },
             ]
         },
         hosting: {
             meta: {
                 product: 'Hosting',
-                columns: ['Product', 'Type'],
+                columns: ['Product', 'Type', "Free Tier", 'Free Limit'],
                 path: 'hosting'
             },
             content: [
                 {
                     name: 'Vercel',
-                    img: firebase,
+                    img: vercel,
                     link: 'https://vercel.com/dashboard',
                     type: 'Jamstack',
                     free: true,

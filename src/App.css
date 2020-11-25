@@ -87,7 +87,8 @@ header {
 }
 
 .legend-div {
-    width: 350px;
+    width: 90%;
+    max-width: 400px;
     border-bottom: gray solid 1px;
     display: flex;
     justify-content: space-between;
@@ -107,8 +108,8 @@ header {
 
 .option-div {
     display: flex;
-    width:90%;
-    max-width: 370px;
+    width: 90%;
+    max-width: 400px;
     justify-content: space-between;
     margin: 30px 0;
     align-items: center;
@@ -116,6 +117,7 @@ header {
 
 .option-type {
     font-size: 20px;
+    width: 100px
 }
 
 .option-img {

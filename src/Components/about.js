@@ -36,7 +36,9 @@ export default function About() {
                 <br /><br />
                 <a href="https://iconscout.com/icons/heroku">Heroku Icon</a> by <a href="https://iconscout.com/contributors/jagathish">Jagathish Saravanan</a>
                 <br /><br />
-
+                <a href="https://iconscout.com/icons/sass">Sass Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
+                <br /><br />
+                <a href="https://iconscout.com/icons/low">Low Icon</a> by <a href="https://iconscout.com/contributors/twitter-inc">Twitter Emoji</a>
             
             
             </p>
