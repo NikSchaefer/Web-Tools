@@ -37,8 +37,7 @@ header {
 .about-div {
     margin: auto;
     width: 90%;
-    max-width: 470px;
-    text-align: left;
+    max-width: 420px;
 }
 
 /*     Home      */
