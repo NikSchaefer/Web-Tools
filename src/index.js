@@ -16,7 +16,6 @@ function APage(props) {
     </Route>
   )
 }
-
 function Render(props) {
   let out = []
   const array = Object.keys(props.tools)
@@ -27,7 +26,6 @@ function Render(props) {
   }
   return out
 }
-
 function App() {
   return (
     <BrowserRouter>
@@ -35,11 +33,9 @@ function App() {
       <Route exact path='/'>
         <Home config={config.homeInfo} />
       </Route>
-
       <Route path='/about' component={About} />
 
       <Render tools={config.tools} />
-
     </BrowserRouter>
   );
 }

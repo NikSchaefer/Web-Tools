@@ -1,4 +1,3 @@
-
 import express from './Images/backend/express.svg'
 import next from './Images/backend/nextjs.svg'
 import django from './Images/backend/django.svg'
@@ -173,7 +172,7 @@ export const config = {
                 {
                     name: 'MongoDB',
                     img: mongo,
-                    link: 'https://auth0.com/',
+                    link: 'https://www.mongodb.com/',
                     type: 'NoSQL',
                     free: free,
                     freeLimit: '512 MB',
@@ -181,7 +180,7 @@ export const config = {
                 {
                     name: 'Fauna',
                     img: fauna,
-                    link: 'https://auth0.com/',
+                    link: 'https://fauna.com/',
                     type: 'NoSQL',
                     free: free,
                     freeLimit: '100 MB',
@@ -197,7 +196,7 @@ export const config = {
                 {
                     name: 'AWS',
                     img: aws,
-                    link: 'https://auth0.com/',
+                    link: 'https://aws.amazon.com/',
                     type: 'Depends on Service',
                     free: free,
                     freeLimit: 'Depends on Service',
@@ -205,7 +204,7 @@ export const config = {
                 {
                     name: 'Google Cloud SQL',
                     img: googleCloud,
-                    link: 'https://auth0.com/',
+                    link: 'https://cloud.google.com/',
                     type: 'SQL',
                     free: notFree,
                     freeLimit: 'N/A',
@@ -213,7 +212,7 @@ export const config = {
                 {
                     name: 'Microsoft Azure SQL',
                     img: azure,
-                    link: 'https://auth0.com/',
+                    link: 'https://azure.microsoft.com/',
                     type: 'SQL',
                     free: notFree,
                     freeLimit: 'N/A',
