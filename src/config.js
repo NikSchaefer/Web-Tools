@@ -38,7 +38,7 @@ export const config = {
             ['Authentication', 'auth'],
             ['Front End', 'frontend'],
             ['Back End', 'backend'],
-        
+
             ['Database', 'database'],
             ['CSS Framework', 'css'],
             ['Hosting', 'hosting'],

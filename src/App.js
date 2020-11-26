@@ -1,12 +1,13 @@
 import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
 import { BrowserRouter, Route } from 'react-router-dom'
 import Home from './Components/home'
 import Page from './Components/page'
 import About from './Components/about'
-
 import Header from './Components/header'
-
-
 import { config } from './config'
 
 function APage(props) {
@@ -35,6 +36,7 @@ export default function App() {
       <Route exact path='/'>
         <Home config={config.homeInfo} />
       </Route>
+
       <Route path='/about' component={About} />
 
       <Render tools={config.tools} />
