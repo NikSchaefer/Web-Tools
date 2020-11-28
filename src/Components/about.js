@@ -43,14 +43,6 @@ export default function About() {
                 <a href="https://iconscout.com/icons/google-analytics">Google-analytics Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
                 <br /><br />
                 <a href="https://iconscout.com/icons/mongodb">Mongodb Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
-
-
-
-
-
-
-
-
             </p>
         </div>
     )
