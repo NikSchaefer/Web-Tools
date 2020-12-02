@@ -29,21 +29,43 @@ import notFree from './Images/Free/low.svg'
 import fauna from './Images/Database/fauna.png'
 import mongo from './Images/Database/mongodb.svg'
 
+export interface meta {
+    product: string,
+    columns: string[],
+    path: string,
+}
+export interface content {
+    name: string,
+    img: any,
+    link: string,
+    type: string,
+    free?: any,
+    freeLimit?: string,
+}
+export interface tool {
+    meta: meta,
+    content: content[]
+}
 
-export const config = {
-    homeInfo: // path on the home page
-        [
-            ['Analytics', 'analytics'],
-            ['Authentication', 'auth'],
-            ['Database', 'database'],
-            ['Front End', 'frontend'],
-            ['Back End', 'backend'],
-            ['CSS Framework', 'css'],
-            ['Hosting', 'hosting'],
-        ],
+export interface configType {
+    homeInfo: string[][],
+    tools: tool[]
+}
 
-    tools: {
-        analytics: {
+
+
+export const config: configType = {
+    homeInfo: [
+        ['Analytics', 'analytics'],
+        ['Authentication', 'auth'],
+        ['Database', 'database'],
+        ['Front End', 'frontend'],
+        ['Back End', 'backend'],
+        ['CSS Framework', 'css'],
+        ['Hosting', 'hosting'],
+    ],
+    tools: [
+        {
             meta: {
                 product: 'Analytics',
                 columns: ['Product', '', "Free Tier", 'Free Limit'],
@@ -68,7 +90,7 @@ export const config = {
                 },
             ]
         },
-        auth: {
+        {
             meta: {
                 product: 'Authentication',
                 columns: ['Product', 'Type', "Free Tier", 'Free Limit'],
@@ -93,7 +115,7 @@ export const config = {
                 },
             ]
         },
-        backEnd: {
+        {
             meta: {
                 product: 'Backend Frameworks',
                 columns: ['Product', 'Type'],
@@ -104,7 +126,9 @@ export const config = {
                     name: '',
                     img: express,
                     link: 'https://expressjs.com/',
-                    type: 'Node.js'
+                    type: 'Node.js',
+
+
                 },
                 {
                     name: 'Next JS',
@@ -126,7 +150,7 @@ export const config = {
                 },
             ]
         },
-        frontEnd: {
+        {
             meta: {
                 product: 'Frontend Frameworks',
                 columns: ['Product', 'Size'],
@@ -153,7 +177,7 @@ export const config = {
                 },
             ]
         },
-        database: {
+        {
             meta: {
                 product: 'Database',
                 columns: ['Product', 'Type', "Free Tier", 'Free Limit'],
@@ -218,7 +242,7 @@ export const config = {
                 },
             ]
         },
-        css: {
+        {
             meta: {
                 product: 'CSS Frameworks',
                 columns: ['Framework', 'JS'],
@@ -245,7 +269,7 @@ export const config = {
                 },
             ]
         },
-        hosting: {
+        {
             meta: {
                 product: 'Hosting',
                 columns: ['Product', 'Type', "Free Tier", 'Free Limit'],
@@ -294,5 +318,5 @@ export const config = {
                 },
             ]
         },
-    }
+    ]
 }

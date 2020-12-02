@@ -1,10 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-const width = '600px'
-function Legend(props:{meta:any}) {
-    function LegendLinks(props:{array:any}):any {
+import { tool, meta, content } from '../config'
+
+
+const width = '600px';
+function Legend(props:{meta:meta}) {
+    function LegendLinks(props:{array:string[]}):any {
         let out = []
-        for (let i = 0; i < props.array.length; i++) {
+        for (let i:number = 0; i < props.array.length; i++) {
             out.push(<p>{props.array[i]}</p>)
         }
         return out;
@@ -20,7 +23,7 @@ function Legend(props:{meta:any}) {
         </div>
     )
 }
-function OptionRow(props:{array:any, iter:number}) {
+function OptionRow(props:{ array: content[], iter:number }) {
     if ('free' in props.array[props.iter]) {
         return (
             <div className='option-div' style={{ maxWidth: width }}>
@@ -49,14 +52,14 @@ function OptionRow(props:{array:any, iter:number}) {
         )
     }
 }
-function Options(props:{array:any, columns:any}):any {
+function Options(props: { array: content[], columns: string[]}):any {
     let out = []
-    for (let i = 0; i < props.array.length; i++) {
+    for (let i:number = 0; i < props.array.length; i++) {
         out.push(<OptionRow iter={i} array={props.array} />)
     }
     return out
 }
-export default function Page(props:{config:any}) {
+export default function Page(props:{ config:tool }) {
     return (
         <div className='page-div'>
             <h1>{props.config.meta.product}</h1>

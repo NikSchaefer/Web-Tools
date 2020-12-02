@@ -7,21 +7,20 @@ import Home from './Components/home'
 import Page from './Components/page'
 import About from './Components/about'
 import Header from './Components/header'
-import { config } from './config'
+import { config, tool } from './config'
 
-function APage(props:{tool:any}) {
+function APage(props: { tool: tool }) {
   return (
     <Route path={`/${props.tool.meta.path}`}>
       <Page config={props.tool} />
     </Route>
   )
 }
-function Render(props:{tools:any}):any {
+function Render(props: { tools: tool[] }): any {
   let out = []
-  const array = Object.keys(props.tools)
-  for (let i = 0; i < array.length; i++) {
+  for (let i: number = 0; i < props.tools.length; i++) {
     out.push(
-      <APage tool={props.tools[array[i]]} />
+      <APage tool={props.tools[i]} />
     )
   }
   return out
