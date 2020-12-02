@@ -35,7 +35,7 @@ function OptionRow(props:{ array: content[], iter:number }) {
                 </a>
                 <p className='option-type'>{props.array[props.iter].type}</p>
                 <img src={props.array[props.iter].free} className='option-free-img' alt='' />
-                <p className='option-type'>{props.array[props.iter].freeLimit}</p>    
+                <p className='option-type'>{props.array[props.iter].freeLimit}</p>
             </div>
         )
     }
