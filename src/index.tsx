@@ -9,14 +9,14 @@ import About from './Components/about'
 import Header from './Components/header'
 import { config } from './config'
 
-function APage(props) {
+function APage(props:{tool:any}) {
   return (
     <Route path={`/${props.tool.meta.path}`}>
       <Page config={props.tool} />
     </Route>
   )
 }
-function Render(props) {
+function Render(props:{tools:any}):any {
   let out = []
   const array = Object.keys(props.tools)
   for (let i = 0; i < array.length; i++) {

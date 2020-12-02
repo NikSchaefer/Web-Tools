@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 const width = '600px'
-function Legend(props) {
-    function LegendLinks(props) {
+function Legend(props:{meta:any}) {
+    function LegendLinks(props:{array:any}):any {
         let out = []
         for (let i = 0; i < props.array.length; i++) {
             out.push(<p>{props.array[i]}</p>)
@@ -20,7 +20,7 @@ function Legend(props) {
         </div>
     )
 }
-function OptionRow(props) {
+function OptionRow(props:{array:any, iter:number}) {
     if ('free' in props.array[props.iter]) {
         return (
             <div className='option-div' style={{ maxWidth: width }}>
@@ -49,14 +49,14 @@ function OptionRow(props) {
         )
     }
 }
-function Options(props) {
+function Options(props:{array:any, columns:any}):any {
     let out = []
     for (let i = 0; i < props.array.length; i++) {
         out.push(<OptionRow iter={i} array={props.array} />)
     }
     return out
 }
-export default function Page(props) {
+export default function Page(props:{config:any}) {
     return (
         <div className='page-div'>
             <h1>{props.config.meta.product}</h1>
