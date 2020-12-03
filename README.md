@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/nikschaefer/web-tools/badge)](https://www.codefactor.io/repository/github/nikschaefer/web-tools)
 # Contributing
 
 All of the info is located in config.js in the src to be easily accessable to add things. 
