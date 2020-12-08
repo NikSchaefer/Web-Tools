@@ -127,8 +127,6 @@ export const config: configType = {
                     img: express,
                     link: 'https://expressjs.com/',
                     type: 'Node.js',
-
-
                 },
                 {
                     name: 'Next JS',
