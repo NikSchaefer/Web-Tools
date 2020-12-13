@@ -9,7 +9,7 @@ Follow the same format as in the file code should automatically create a page. C
 This project was built with React deployed with vercel
 
 # Deployment
-
+Project will eventually be merged to csnotes
 Currently Deployed at https://development-tools.vercel.app/
 
 # License
